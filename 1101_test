@@ -1,1 +1,63 @@
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+class person
+
+{
+
+public:
+
+int age;
+
+string name;
+
+public:
+
+person(int age_, string name_)
+
+{age=age_; name=name_;}        
+
+};
+
+ 
+
+class teacher : public person
+
+{
+
+public:
+
+int salary;
+
+public:
+
+teacher (int age_, string name_, int salary_): person(int age_, string name_)
+
+{ salary = salary _; }        
+
+};
+
+ 
+
+class student : public person
+
+{
+
+public:
+
+int score;
+
+public:
+
+student(int age_, string name_, int score_): person(int age_, string name_)
+
+{ score = score_; }        
+
+};
+
+
+
+
+
+
+
+
+
+
